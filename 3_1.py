@@ -16,10 +16,6 @@ def turnLeft(direction):
 def distance(position):
     return abs(position[0]) + abs(position[1])
 
-# print(move((0,0),(2,0)))
-# print(steps((1,0), 2))
-# print(move((0,0),steps((1,0), 2)))
-
 def solve(input):
     """
     solves day 3 part 1 for given input > 0
