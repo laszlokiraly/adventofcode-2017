@@ -3,9 +3,6 @@ import math
 def move(position, direction):
     return (position[0] + direction[0], position[1] + direction[1])
 
-def steps(direction, steps):
-    return (direction[0] * steps, direction[1] * steps)
-
 def turnLeft(direction):
     if direction == (1, 0):
         return (0,1)
