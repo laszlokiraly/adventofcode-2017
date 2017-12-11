@@ -1,5 +1,5 @@
 """
-solution for day 8 part 1
+solution for day 8 part 1 and 2
 """
 import re
 from enum import Enum
