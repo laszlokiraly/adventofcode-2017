@@ -1,5 +1,5 @@
 """
-solution for day 10
+solution for day 10 part 1
 """
 import re
 
@@ -7,7 +7,7 @@ DAY10_INPUT = "206,63,255,131,65,80,238,157,254,24,133,2,16,0,1,3"
 
 def solve(input_data, list_length):
     """
-    solve day 10
+    solve day 10 part 1
     """
     numbers = []
     for value in range(list_length):
