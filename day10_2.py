@@ -12,6 +12,12 @@ def convert_to_ascii(input_data):
     result += [17, 31, 73, 47, 23]
     return result
 
+def hash_knot(input_data):
+    """
+    for use in day 14
+    """
+    return solve(input_data, 256)
+
 def solve(input_data, list_length):
     """
     solve day 10 part 2
@@ -56,12 +62,19 @@ def xor_test():
         test.extend([65, 27, 9, 1, 4, 3, 40, 50, 91, 7, 6, 0, 2, 5, 68, 22])
     return int(xor(test)[0], 16)
 
-print "unittest convert_to_ascii('1,2,3'): %s" % convert_to_ascii('1,2,3')
-print "unittest xor(65, 27, 9, 1, 4, 3, 40, 50, 91, 7, 6, 0, 2, 5, 68, 22): %d" % xor_test()
-print ""
-print "test \"\": %s" % solve("", 256)
-print "test \"AoC 2017\": %s" % solve("AoC 2017", 256)
-print "test \"1,2,3\": %s" % solve("1,2,3", 256)
-print "test \"1,2,4\": %s" % solve("1,2,4", 256)
-print ""
-print "DAY10_INPUT: %s" % solve(DAY10_INPUT, 256)
+def main():
+    """
+    main
+    """
+    print "unittest convert_to_ascii('1,2,3'): %s" % convert_to_ascii('1,2,3')
+    print "unittest xor(65, 27, 9, 1, 4, 3, 40, 50, 91, 7, 6, 0, 2, 5, 68, 22): %d" % xor_test()
+    print ""
+    print "test \"\": %s" % solve("", 256)
+    print "test \"AoC 2017\": %s" % solve("AoC 2017", 256)
+    print "test \"1,2,3\": %s" % solve("1,2,3", 256)
+    print "test \"1,2,4\": %s" % solve("1,2,4", 256)
+    print ""
+    print "DAY10_INPUT: %s" % solve(DAY10_INPUT, 256)
+
+if __name__ == "__main__":
+    main()
